@@ -1,0 +1,9 @@
+D:\Projetos\Pessoal\InvestmentApp\InvestmentApp\InvestmentApp.Repository\bin\Debug\netcoreapp3.1\InvestmentApp.Repository.deps.json
+D:\Projetos\Pessoal\InvestmentApp\InvestmentApp\InvestmentApp.Repository\bin\Debug\netcoreapp3.1\InvestmentApp.Repository.dll
+D:\Projetos\Pessoal\InvestmentApp\InvestmentApp\InvestmentApp.Repository\bin\Debug\netcoreapp3.1\InvestmentApp.Repository.pdb
+D:\Projetos\Pessoal\InvestmentApp\InvestmentApp\InvestmentApp.Repository\obj\Debug\netcoreapp3.1\InvestmentApp.Repository.csprojAssemblyReference.cache
+D:\Projetos\Pessoal\InvestmentApp\InvestmentApp\InvestmentApp.Repository\obj\Debug\netcoreapp3.1\InvestmentApp.Repository.csproj.CoreCompileInputs.cache
+D:\Projetos\Pessoal\InvestmentApp\InvestmentApp\InvestmentApp.Repository\obj\Debug\netcoreapp3.1\InvestmentApp.Repository.AssemblyInfoInputs.cache
+D:\Projetos\Pessoal\InvestmentApp\InvestmentApp\InvestmentApp.Repository\obj\Debug\netcoreapp3.1\InvestmentApp.Repository.AssemblyInfo.cs
+D:\Projetos\Pessoal\InvestmentApp\InvestmentApp\InvestmentApp.Repository\obj\Debug\netcoreapp3.1\InvestmentApp.Repository.dll
+D:\Projetos\Pessoal\InvestmentApp\InvestmentApp\InvestmentApp.Repository\obj\Debug\netcoreapp3.1\InvestmentApp.Repository.pdb

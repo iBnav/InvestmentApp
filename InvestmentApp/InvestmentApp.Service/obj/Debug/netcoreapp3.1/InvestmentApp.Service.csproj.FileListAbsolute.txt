@@ -1,0 +1,12 @@
+D:\Projetos\Pessoal\InvestmentApp\InvestmentApp\InvestmentApp.Service\bin\Debug\netcoreapp3.1\InvestmentApp.Service.deps.json
+D:\Projetos\Pessoal\InvestmentApp\InvestmentApp\InvestmentApp.Service\bin\Debug\netcoreapp3.1\InvestmentApp.Service.dll
+D:\Projetos\Pessoal\InvestmentApp\InvestmentApp\InvestmentApp.Service\bin\Debug\netcoreapp3.1\InvestmentApp.Service.pdb
+D:\Projetos\Pessoal\InvestmentApp\InvestmentApp\InvestmentApp.Service\bin\Debug\netcoreapp3.1\InvestmentApp.Domain.dll
+D:\Projetos\Pessoal\InvestmentApp\InvestmentApp\InvestmentApp.Service\bin\Debug\netcoreapp3.1\InvestmentApp.Domain.pdb
+D:\Projetos\Pessoal\InvestmentApp\InvestmentApp\InvestmentApp.Service\obj\Debug\netcoreapp3.1\InvestmentApp.Service.csprojAssemblyReference.cache
+D:\Projetos\Pessoal\InvestmentApp\InvestmentApp\InvestmentApp.Service\obj\Debug\netcoreapp3.1\InvestmentApp.Service.csproj.CoreCompileInputs.cache
+D:\Projetos\Pessoal\InvestmentApp\InvestmentApp\InvestmentApp.Service\obj\Debug\netcoreapp3.1\InvestmentApp.Service.AssemblyInfoInputs.cache
+D:\Projetos\Pessoal\InvestmentApp\InvestmentApp\InvestmentApp.Service\obj\Debug\netcoreapp3.1\InvestmentApp.Service.AssemblyInfo.cs
+D:\Projetos\Pessoal\InvestmentApp\InvestmentApp\InvestmentApp.Service\obj\Debug\netcoreapp3.1\InvestmentApp.Service.csproj.CopyComplete
+D:\Projetos\Pessoal\InvestmentApp\InvestmentApp\InvestmentApp.Service\obj\Debug\netcoreapp3.1\InvestmentApp.Service.dll
+D:\Projetos\Pessoal\InvestmentApp\InvestmentApp\InvestmentApp.Service\obj\Debug\netcoreapp3.1\InvestmentApp.Service.pdb

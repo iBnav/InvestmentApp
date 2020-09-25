@@ -1,0 +1,12 @@
+api/Auth/AutenticarUsuario
+{
+    "Email":string,
+    "Password":string
+}
+
+api/Cadastro/Usuario
+{
+    "Nome":string,
+    "Password":string,
+    "Email":string
+}
