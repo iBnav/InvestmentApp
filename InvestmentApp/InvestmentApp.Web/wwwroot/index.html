@@ -2,9 +2,35 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title></title>
+    <link href="lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="css/site.css" rel="stylesheet" />
+    <title>Investment App</title>
+    
 </head>
 <body>
-    hello world!
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="/">Investment</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        if (!sessionStorage.getItem("id_user_investmentApp")) {
+            $("#navbarSupportedContent").append('<div class="nav-item"><a class="nav-link" href="/views/login.html">Login</a></div>')
+        } else {
+            $("#navbarSupportedContent").append('<div class="nav-item"><label class="text-light">Olá ' + sessionStorage.getItem("user_name_investmentApp") + '</label> <label class="logout text-light" onclick="logout()">| Logout</label></div>')
+        }
+    </script>
+    <script src="js/site.js"></script>
 </body>
 </html>

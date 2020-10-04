@@ -27,7 +27,7 @@ namespace InvestmentApp.Repository.Repositorios
             
         }
 
-        public Usuario RetornarUsuarioPorEmail(string email)
+        public Usuario RetornarUsuarioPorEmail(string email, bool isCadastro)
         {
             SqlCommand query = new SqlCommand($"SELECT * FROM tb_Usuario WHERE Email_usuario = '{email}'", DataBaseSettings.sqlConnection);
             try
@@ -50,8 +50,16 @@ namespace InvestmentApp.Repository.Repositorios
                     return usuario;
                 } else
                 {
-                    DataBaseSettings.sqlConnection.Close();
-                    throw new Exception("Email não cadastrado");
+                    if (isCadastro)
+                    {
+                        DataBaseSettings.sqlConnection.Close();
+                        return null;
+                    } else
+                    {
+                        DataBaseSettings.sqlConnection.Close();
+                        throw new Exception("Email não cadastrado");
+                    }
+                    
                 }
             }
             catch (Exception ex)

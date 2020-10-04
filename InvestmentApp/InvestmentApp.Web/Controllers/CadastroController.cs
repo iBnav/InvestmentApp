@@ -24,7 +24,7 @@ namespace InvestmentApp.Web.Controllers
         {
             try
             {
-                return Ok(new { Message = "Usuario cadastrado com sucesso!", ID = cadastroService.CadastrarUsuario(usuario).Id });
+                return Ok(new { Message = "Usuario cadastrado com sucesso!", ID = cadastroService.CadastrarUsuario(usuario).Id, Nome = usuario.Nome });
             }
             catch (Exception ex)
             {

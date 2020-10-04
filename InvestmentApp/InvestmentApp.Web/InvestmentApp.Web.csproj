@@ -14,11 +14,6 @@
 
 
   <ItemGroup>
-    <Folder Include="wwwroot\views\" />
-  </ItemGroup>
-
-
-  <ItemGroup>
     <ProjectReference Include="..\InvestmentApp.Domain\InvestmentApp.Domain.csproj" />
     <ProjectReference Include="..\InvestmentApp.Service\InvestmentApp.Service.csproj" />
   </ItemGroup>

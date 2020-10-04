@@ -33,7 +33,7 @@ namespace InvestmentApp.Service.Services
             {
                 throw new Exception("Senha não pode ser em branco");
             }
-            if (usuarioRepository.RetornarUsuarioPorEmail(usuario.Email).Email == usuario.Email)
+            if (usuarioRepository.RetornarUsuarioPorEmail(usuario.Email, true)?.Email == usuario.Email)
             {
                 throw new Exception("Email já cadastrado");
             }

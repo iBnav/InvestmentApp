@@ -31,7 +31,7 @@ namespace InvestmentApp.Service.Services
             UsuarioRepository usuarioRepository = new UsuarioRepository();
             try
             {
-                usuario = usuarioRepository.RetornarUsuarioPorEmail(usuario.Email);
+                usuario = usuarioRepository.RetornarUsuarioPorEmail(usuario.Email, false);
             }
             catch (Exception ex)
             {
