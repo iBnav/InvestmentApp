@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link href="../lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="../css/site.css" rel="stylesheet" />
+    <title>Investment App</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="/">Investment</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+            <div class="nav-item active">
+                <a class="nav-link" href="/views/login.html">Login</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <div class="login-wrapper">
+            <div class="card mt-2 mb-2">
+                <div class="card-title text-center font-weight-bold"><h5>Questionário para Avaliação de Perfil</h5></div>
+                <center>
+                    <p> Bem vindo ao InvestmentApp, conclua o questionário para podermos iniciar.</p>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 20%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </center>
+                <div class="card-body">
+                    <div class="form-group">
+                        <select class="custom-select custom-select-sm">
+                            <option selected>Pergunta1</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                        <br />
+                        <select class="custom-select custom-select-sm">
+                            <option selected>Pergunta2</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+
+                        <select class="custom-select custom-select-sm">
+                            <option selected>Pergunta3</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+
+                        <select class="custom-select custom-select-sm">
+                            <option selected>Pergunta4</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+
+                        <select class="custom-select custom-select-sm">
+                            <option selected>Pergunta5</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-center mt-3">
+        <button class="btn btn-success" onclick="Login()">Concluir</button><br />
+        <div class="spinner-border mt-1" id="spinner_loading" role="status" hidden>
+            <span class="sr-only">Loading...</span>
+        </div><br />
+    </div>
+
+    <script src="../lib/jquery/dist/jquery.min.js"></script>
+    <script src="../lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        if (!sessionStorage.getItem("id_user_investmentApp")) {
+            $("#navbarSupportedContent").append('<div class="nav-item"><a class="nav-link" href="/views/login.html">Login</a></div>')
+        } else {
+            $("#navbarSupportedContent").append('<div class="nav-item"><label class="text-light">Olá ' + sessionStorage.getItem("user_name_investmentApp") + '</label> <label class="logout text-light" onclick="logout()">| Logout</label></div>')
+        }
+    </script>
+</body>
+</html>

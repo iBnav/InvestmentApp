@@ -31,7 +31,7 @@
             sessionStorage.setItem("id_user_investmentApp", response.id);
             sessionStorage.setItem("user_name_investmentApp", response.nome);
             $("#spinner_loading").attr("hidden", true);
-            location.href = "/";
+            location.href = "/views/suitability.html";
         },
         error: function (err) {
             alert("Erro! " + err.responseText);

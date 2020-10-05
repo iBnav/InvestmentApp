@@ -1,4 +1,7 @@
-﻿.navbar a{
+﻿body{
+    overflow:hidden;
+}
+.navbar a{
     color: white;
 }
 .login-wrapper{
@@ -11,4 +14,19 @@
 
 .logout:hover{
     cursor:pointer;
+}
+.bg-blue {
+    background-color: #FF8C00;
+    padding-top:5%;
+    
+}
+.menu-wrapper {
+    height: 100vh;
+}
+
+.carousel-inner{
+    height: 400px;
+}
+.progress{
+    width:400px;
 }
