@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using InvestmentApp.Domain.Classes;
@@ -45,6 +46,21 @@ namespace InvestmentApp.Web.Controllers
             {
                 return BadRequest(ex.Message);
             }
+        }
+
+        [HttpDelete("apagar/{idAcao}")]
+        public IActionResult DeleteAcao(int idAcao)
+        {
+            try
+            {
+                acoesUsuarioService.ApagarAcao(idAcao);
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+            
         }
     }
 }

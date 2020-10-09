@@ -35,5 +35,18 @@ namespace InvestmentApp.Service.Services
                 throw ex;
             }
         }
+
+        public void ApagarAcao(int idAcao)
+        {
+            AcoesUsuarioRepository aur = new AcoesUsuarioRepository();
+            try
+            {
+                aur.ApagarAcao(idAcao);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

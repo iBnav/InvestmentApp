@@ -9,5 +9,6 @@ namespace InvestmentApp.Domain.Interfaces
     {
         List<AcoesUsuario> RetornarAcoes(int usuarioID);
         void SalvarAcao(AcoesUsuario acao);
+        void ApagarAcao(int idAcao);
     }
 }

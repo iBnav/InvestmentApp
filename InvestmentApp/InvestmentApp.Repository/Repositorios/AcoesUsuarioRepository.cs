@@ -83,5 +83,22 @@ namespace InvestmentApp.Repository.Repositorios
                 }
             }
         }
+
+        public void ApagarAcao(int idAcao)
+        {
+            SqlCommand query = new SqlCommand($"DELETE FROM tb_Acoes_usuario WHERE ID_acao = " + idAcao, DataBaseSettings.sqlConnection);
+
+            try
+            {
+                DataBaseSettings.sqlConnection.Open();
+                query.ExecuteNonQuery();
+                DataBaseSettings.sqlConnection.Close();
+            }
+            catch (Exception ex)
+            {
+                DataBaseSettings.sqlConnection.Close();
+                throw ex;
+            }
+        }
     }
 }
