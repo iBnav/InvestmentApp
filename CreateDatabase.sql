@@ -41,6 +41,15 @@ CREATE TABLE Usuario_Pergunta_Resposta(
 	CONSTRAINT FK_Resposta_Pergunta FOREIGN KEY (ID_Resposta) REFERENCES tb_Respostas_Suitability(ID_Resposta)
 );
 
+CREATE TABLE tb_Acoes_usuario(
+	ID_acao INT IDENTITY PRIMARY KEY,
+	ID_usuario INT NOT NULL,
+	Papel varchar(6),
+	Nota int,
+	Valor_pago Decimal(10,2) NOT NULL,
+	CONSTRAINT FK_ID_USUARIO_ACOES FOREIGN KEY (ID_usuario) REFERENCES tb_Usuario(ID_usuario)
+);
+
 INSERT INTO tb_Perfil_Suitability(Descricao_perfil) values ('Conservador'), ('Moderado'), ('Agressivo');
 
 INSERT INTO tb_Perguntas_Suitability(Descricao_pergunta) values

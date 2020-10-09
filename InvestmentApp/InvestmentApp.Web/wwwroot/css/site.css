@@ -40,3 +40,17 @@
 .content{
     margin-top:10%;
 }
+
+.cabecalho-dark {
+    background-color: #343A40;
+    text-align: center;
+    color: #EBF9EE;
+    width: 100%;
+    height: 50px;
+    padding:4px;
+    font-size: 20pt;
+}
+
+.clickable{
+    cursor:pointer;
+}

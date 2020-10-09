@@ -31,6 +31,7 @@ namespace InvestmentApp.Web
             services.AddTransient<ICriptografiaService, CriptografiaService>();
             services.AddTransient<IAuthService, AuthService>();
             services.AddTransient<ISuitabilityService, SuitabilityService>();
+            services.AddTransient<IAcoesUsuarioService, AcoesUsuarioService>();
             services.AddMvc();
         }
 

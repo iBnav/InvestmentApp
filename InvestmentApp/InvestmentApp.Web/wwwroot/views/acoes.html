@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link href="../lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="../lib/fontawesome/css/all.css" rel="stylesheet" />
+    <link href="../css/site.css" rel="stylesheet" />
+    <title>Investment App</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="/">Investment</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item" id="menu_perfil">
+                    <a class="nav-link" href="/views/Suitability.html">Perfil de investidor</a>
+                </li>
+                <li class="nav-item" id="menu_acoes">
+                    <a class="nav-link active" href="/views/acoes.html">Minhas Ações<span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 mt-5">
+                <div class="cabecalho-dark">
+                    <div class="text-center">
+                        <label>Inserir Ação</label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-5">
+                <label for="papel">Papel:</label>
+                <input type="text" name="papel" id="papel_acao" placeholder="Ex: ITUB4" class="form-control" />
+            </div>
+            <div class="col-12 col-md-4">
+                <label for="valor">Valor Pago: R$</label>
+                <input type="number" step=".01" name="valor" id="valor_acao" placeholder="Ex: 25,10" class="form-control" />
+            </div>
+            <div class="col-12 col-md-2">
+                <label for="nota">Nota (0-10):</label>
+                <input type="number" name="papel" id="nota_acao" placeholder="Ex: 9" class="form-control" />
+            </div>
+            <div class="col-12 col-md-1 text-center text-md-left">
+                <button class="btn btn-dark" style="margin-top:32px;" onclick="salvarAcao()">Salvar</button>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-12">
+                <table class="table table-hover">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Nota</th>
+                            <th scope="col">Papel</th>
+                            <th scope="col">Valor Pago</th>
+                            <th scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody_acoes">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="../lib/jquery/dist/jquery.min.js"></script>
+    <script>
+        if (!sessionStorage.getItem("id_user_investmentApp")) {
+            location.href = "/";
+        } else {
+            $("#navbarSupportedContent").append('<div class="nav-item"><label class="text-light">Olá ' + sessionStorage.getItem("user_name_investmentApp") + '</label> <label class="logout text-light" onclick="logout()">| Logout</label></div>')
+        }
+    </script>
+    <script src="../lib/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="../js/site.js"></script>
+    <script src="../js/acoes.js"></script>
+</body>
+</html>

@@ -22,6 +22,9 @@
                 <li class="nav-item" id="menu_perfil" hidden>
                     <a class="nav-link" href="/views/Suitability.html">Perfil de investidor</a>
                 </li>
+                <li class="nav-item" id="menu_acoes" hidden>
+                    <a class="nav-link" href="/views/acoes.html">Minhas Ações</a>
+                </li>
             </ul>
             
         </div>
@@ -85,6 +88,7 @@
             $("#navbarSupportedContent").append('<div class="nav-item"><label class="text-light">Olá ' + sessionStorage.getItem("user_name_investmentApp") + '</label> <label class="logout text-light" onclick="logout()">| Logout</label></div>')
             $("#btn_abrir_conta").attr("hidden", true);
             $("#menu_perfil").removeAttr("hidden");
+            $("#menu_acoes").removeAttr("hidden");
         }
     </script>
     <script src="js/site.js"></script>
