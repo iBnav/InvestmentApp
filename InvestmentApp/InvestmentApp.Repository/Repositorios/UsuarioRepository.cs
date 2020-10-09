@@ -1,4 +1,5 @@
 ﻿using InvestmentApp.Domain.Classes;
+using InvestmentApp.Domain.Classes.ReceiverAPI;
 using InvestmentApp.Repository.DbConfig;
 using System;
 using System.Collections.Generic;
@@ -44,7 +45,7 @@ namespace InvestmentApp.Repository.Repositorios
                         Nome = dr["Nome_usuario"].ToString(),
                         Password = dr["Password_usuario"].ToString(),
                         FlagPrimeiroLogin = Convert.ToBoolean(dr["flag_Primeiro_Login"]),
-                        Perfil = dr["Perfil_usuario"].ToString()
+                        Perfil = string.IsNullOrEmpty(dr["Perfil_usuario"].ToString()) ? 0 : Convert.ToInt32(dr["Perfil_usuario"].ToString())
                     };
                     DataBaseSettings.sqlConnection.Close();
                     return usuario;
@@ -68,6 +69,22 @@ namespace InvestmentApp.Repository.Repositorios
                 throw ex;
             }
 
+        }
+
+        public void AtualizarPerfil(Usuario user)
+        {
+            SqlCommand query = new SqlCommand($"UPDATE tb_Usuario SET Perfil_usuario = '{user.Perfil}', flag_Primeiro_Login = 0 WHERE ID_usuario = {user.Id}", DataBaseSettings.sqlConnection);
+            try
+            {
+                DataBaseSettings.sqlConnection.Open();
+                query.ExecuteNonQuery();
+                DataBaseSettings.sqlConnection.Close();
+            }
+            catch (Exception ex)
+            {
+                DataBaseSettings.sqlConnection.Close();
+                throw ex;
+            }
         }
     }
 }

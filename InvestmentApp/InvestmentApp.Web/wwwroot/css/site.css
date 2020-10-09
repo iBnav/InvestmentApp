@@ -17,8 +17,6 @@
 }
 .bg-blue {
     background-color: #FF8C00;
-    padding-top:5%;
-    
 }
 .menu-wrapper {
     height: 100vh;
@@ -29,4 +27,16 @@
 }
 .progress{
     width:400px;
+}
+
+.ticker{
+    height:50px;
+    background-color:black;
+    color:white;
+    padding:15px;
+    width:100%
+}
+
+.content{
+    margin-top:10%;
 }

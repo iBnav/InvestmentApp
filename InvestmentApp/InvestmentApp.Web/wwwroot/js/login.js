@@ -23,8 +23,14 @@
         success: function (response) {
             sessionStorage.setItem("id_user_investmentApp", response.id);
             sessionStorage.setItem("user_name_investmentApp", response.nome);
+            sessionStorage.setItem("perfil_investmentApp", response.perfil);
             $("#spinner_loading").attr("hidden", true);
-            location.href = "/views/suitability.html";
+            if (response.flagPrimeiroLogin == true) {
+                location.href = "/views/suitability.html";
+            } else {
+                location.href = "/";
+            }
+            
         },
         error: function (err) {
             alert("Erro! " + err.responseText);
