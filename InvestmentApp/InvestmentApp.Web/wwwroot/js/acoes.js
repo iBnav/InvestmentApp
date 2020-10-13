@@ -81,6 +81,11 @@ function editarAcao(idAcao) {
 }
 
 function salvarAcao(idAcao) {
+    if ($("#nota_acao").val() < 0 || $("#nota_acao").val() > 10) {
+        alert("Nota da ação inválida");
+        return;
+    }
+
     var obj = {
         acaoID: idAcao,
         usuarioID: sessionStorage.getItem("id_user_investmentApp"),
