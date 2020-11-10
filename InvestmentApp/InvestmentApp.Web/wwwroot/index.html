@@ -9,15 +9,16 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="/">Investment</a>
+        
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
+               
+                <li>
+                   <a class="navbar-brand" href="/">ENIATO</a>
                 </li>
                 <li class="nav-item" id="menu_perfil" hidden>
                     <a class="nav-link" href="/views/Suitability.html">Perfil de investidor</a>
@@ -29,50 +30,57 @@
             
         </div>
     </nav>
-    <div class="menu-wrapper bg-blue">
+   
+    <div class="menu-wrapper bg-blue"/>
         <div class="row">
             <div class="ticker text-center">
                 <label class="font-weight-bold"></label>
             </div>
         </div>
-        <div class="container content">
-            <div class="row">
-                <div class="col-12 col-md-6" style="color:white">
-                    <h3> Já possui conta? Gerencie seus investimentos.</h3>
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Email</label>
-                        <input type="email" class="form-control" id="txt_email" aria-describedby="emailHelp">
-                        <small id="emailHelp" class="form-text text-muted">Nunca compartilhe sua conta.</small>
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputPassword1">Senha</label>
-                        <input type="password" class="form-control" id="txt_senha">
-                    </div>
-                    <div class=" mt-3">
-                        <button class="btn btn-dark btn-block" onclick="login()">Entrar</button><br/>
-                        <div class="text-center">
-                            <div class="spinner-border mt-1" id="spinner_loading" role="status" hidden>
-                                <span class="sr-only">Loading...</span>
-                            </div>
-                        </div><br/>
-                    </div>
-                </div>
+        <br />
+        <br />
+        <div class="container content" >
 
-                <div class="col-12 col-md-6 text-center" style="color:white">
-                    <h1 class="h1">Uma forma organizada ajuda Você a Controlar melhor seus Investimentos.</h1>
-                    <p class="text-white">Junte-se a mais de 8 milhões de pessoas que aumentaram seus lucros com uma simples forma organizada e pratica de gerenciamento de ações.</p>
+            <div class="row" >
+               <div class="col-12 col-md-8 " style="color:white">
+                    <h1 class="h1">Cadastre-se e conheça a primeira plataforma para gerenciamento de portifólio pessoal.</h1>
+                    <p><a href="views/cadastro.html">Abra sua conta!</a></p>
 
                     <div class="row mt-2">
-                        <div class="col-12 col-md-6">
-                            <p>Veja mais sobre Ações</p>
-                            <p><a href="views/Suitability.html">Saiba mais</a></p>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <p>Mais de 8 milhões de clientes</p>
-                            <p><a href="views/cadastro.html">Abra sua Conta</a></p>
+                        <div class="col-12 col-md-8">
+
+
+                            <h3>Queremos dar ao investidor pessoa física mais autonomia e facilitar o seu planejamento financeiro.</h3>
+                            <p><a href="views/saibaMais.html">Saiba Mais clicando aqui.</a></p>
                         </div>
                     </div>
                 </div>
+                <div class="col-12 col-md-4" style="color:black">
+                    <center>
+                        <h3> Seja Bem Vindo de Volta!.</h3>
+                        <p>Acesse sua conta para poder visualizar o seu portifólio de investimento.</p>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email</label>
+                            <input type="email" class="form-control" id="txt_email" aria-describedby="emailHelp">
+
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Senha</label>
+                            <input type="password" class="form-control" id="txt_senha">
+                        </div>
+                        <div class=" mt-3">
+                            <button class="btn btn-dark btn-block" onclick="login()">Entrar</button><br />
+                            <small id="emailHelp" class="form-text text-muted">Nunca compartilhe sua conta.</small>
+                            <div class="text-center">
+                                <div class="spinner-border mt-1" id="spinner_loading" role="status" hidden>
+                                    <span class="sr-only">Loading...</span>
+                                </div>
+                            </div><br />
+                        </div>
+                    </center>
+                </div>
+
+
             </div>
         </div>
     </div>

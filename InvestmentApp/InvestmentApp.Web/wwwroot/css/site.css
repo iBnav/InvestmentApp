@@ -5,7 +5,8 @@
     color: white;
 }
 .login-wrapper{
-    margin: 15px auto;
+    
+    background-color: #FF8C00;
 }
 
 .login-wrapper button{
@@ -16,7 +17,7 @@
     cursor:pointer;
 }
 .bg-blue {
-    background-color: #FF8C00;
+    background-image: url('../imagens/boi.jpg');
 }
 .menu-wrapper {
     height: 100vh;
@@ -53,4 +54,10 @@
 
 .clickable{
     cursor:pointer;
+}
+
+.footer{
+    background-color:#ffffff;
+    max-height:"30px";
+    
 }
